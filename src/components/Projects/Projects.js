@@ -8,6 +8,7 @@ import books from "../../Assets/books.jpeg";
 import passop from "../../Assets/password.webp";
 import newsapp from "../../Assets/newsapp.webp";
 import weather from "../../Assets/wea.webp";
+import student from "../../Assets/students.webp"
 
 function Projects() {
   return (
@@ -21,6 +22,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={student}
+    isBlog={false}
+    title="Student Result Analysis"
+    description="A data analysis project utilizing Matplotlib, Seaborn, NumPy, and Pandas to analyze student performance based on marital status, education level, ethnic distribution, and various other factors. The project provides visual insights into trends and correlations, helping in better understanding student demographics and their academic outcomes."
+    ghLink="https://github.com/Deepakpal0807/Student_Result_analysis"
+    // demoLink="https://example.com/"
+  />
+</Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={inventory}
