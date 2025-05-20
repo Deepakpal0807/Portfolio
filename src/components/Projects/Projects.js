@@ -11,6 +11,7 @@ import weather from "../../Assets/wea.webp";
 import student from "../../Assets/students.webp"
 import Task_manager from "../../Assets/Task_manager.jpg"
 import image from "../../Assets/image.png"
+import chatapp from "../../Assets/chatapp.png"
 
 function Projects() {
   return (
@@ -24,6 +25,19 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+     <Col md={4} className="Vibe - Chat ">
+  <ProjectCard
+    imgPath={chatapp}
+    isBlog={false}
+    title="Vibe Chat - connect to world"
+    description="Developed a real-time chat application using React.js, Node.js, Socket.IO, and MongoDB with secure JWT-based authentication. Integrated Zustand for global state management and styled the interface using DaisyUI with Tailwind CSS to deliver a clean, responsive, and dynamic user experience."
+    ghLink="https://github.com/Deepakpal0807/Chat-app"
+    //  demoLink="https://breastcancerdetections.streamlit.app/"   
+ 
+  />
+</Col>
+
            <Col md={4} className="Breast Cancer Detection">
   <ProjectCard
     imgPath={image}
