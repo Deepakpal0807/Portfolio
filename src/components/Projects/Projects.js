@@ -10,6 +10,7 @@ import newsapp from "../../Assets/newsapp.webp";
 import weather from "../../Assets/wea.webp";
 import student from "../../Assets/students.webp"
 import Task_manager from "../../Assets/Task_manager.jpg"
+import image from "../../Assets/image.png"
 
 function Projects() {
   return (
@@ -23,6 +24,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+           <Col md={4} className="Breast Cancer Detection">
+  <ProjectCard
+    imgPath={image}
+    isBlog={false}
+    title="Breast Cancer Detection using Machine Learning Models"
+    description="Developed a machine learning model to detect breast cancer using Python, NumPy, Pandas, and Scikit-learn. Analyzed and visualized classification results with Matplotlib to enhance model interpretability and accuracy.Developed an interactive Streamlit web application for breast cancer detection using Logistic Regression, Decision Tree, and Random Forest classifiers."
+    ghLink="https://github.com/Deepakpal0807/Breast_Cancer_Detection"
+     demoLink="https://breastcancerdetections.streamlit.app/"   
+ 
+  />
+</Col>
           <Col md={4} className="Task- Manager">
   <ProjectCard
     imgPath={Task_manager}
